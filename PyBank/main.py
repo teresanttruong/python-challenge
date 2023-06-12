@@ -83,14 +83,14 @@ print(" ")
 print ("Greatest Decrease in Profit: " + str(greatest_decrease_date) + (" ") + ("($") + str(greatest_decrease) + ")" )
 
 # Set variable for output file
-folder_path = r"C:\Users\Owner\Data_Analytics\Module_3_Python\python-challenge\PyBank\Analysis"
+folder_path = "..\home"
 output_file = "PyBank_Final.txt"
 output_path = os.path.join(folder_path, output_file)
 
 #  Open the output file
 with open(output_path, "w") as output_file:
     output_file.write("Financial Analysis | ")
-    output_file.write("Total Months: "+str(months) + " | ")
+    output_file.write("Total Months: "+ str(months) + " | ")
     output_file.write("Total: " + "$" + str(net_total) + " | ")
     output_file.write("Average Change: " + "$" + str(sum(changelist)/(months-1)) + " | ")
     output_file.write("Greatest Increase in Profits: " + str(max_date) +(" ") + ("($") + str(max_difference) + ")" + " | " )

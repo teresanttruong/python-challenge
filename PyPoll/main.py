@@ -46,7 +46,7 @@ print(" ")
 print("------------------------------")
 
 # Set variable for output file
-folder_path = r"C:\Users\Owner\Data_Analytics\Module_3_Python\python-challenge\PyPoll\Analysis"
+folder_path = "..\home"
 output_file = "PyPoll_Final.txt"
 output_path = os.path.join(folder_path, output_file)
 
